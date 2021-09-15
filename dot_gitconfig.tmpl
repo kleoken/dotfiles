@@ -1,0 +1,13 @@
+[push]
+  default = current
+[color]
+  ui = auto
+[pull]
+  rebase = false
+[init]
+  defaultBranch = main
+[core]
+  excludesfile = .gitignore_global
+{{ if (eq .chezmoi.os "darwin") }}
+[credential]
+  helper = osxkeychain
